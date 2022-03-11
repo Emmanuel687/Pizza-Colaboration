@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, session, redirect, url_for
-from forms import SignupForm, LoginForm
+from forms import SignupForm, LoginForm,OrderForm
 from logger import logger
 
 app = Flask(__name__)
@@ -61,7 +61,30 @@ def login():
         return render_template("login.html", form=form)
 
 
+@app.route("/order", methods=["GET", "POST"])
+def order():
+    form = OrderForm()
+    if request.method == "POST":
+        if form.validate() == False:
+            if "email" in session:
+                logger.info(session["email"] + " : Submitted a bad order form.")
+            else:
+                logger.info("Guest : Submitted a bad order form.")
+            return render_template("order.html", form=form)
+        else:
+            if "email" in session:
+                logger.info(session["email"] + " : Placed an order. Details - " + str(form.data))
+            else:
+                logger.info("Guest : Placed an order. Details - " + str(form.data))
 
+                
+            return render_template("order.html", status="Order placed")
+    elif request.method == "GET":
+        if "email" in session:
+            logger.info(session["email"] + " : Accessed /order")
+        else:
+            logger.info("Guest : Accessed /order")
+        return render_template("order.html", form=form)
 
 
 if __name__ == '__main__':

@@ -18,3 +18,18 @@ class LoginForm(FlaskForm):
 
 
 
+class TimeForm(FlaskForm):
+    hour = SelectField("Hour", choices=[("1:", "1"), ("2:", "2"), ("3:", "3"), ("4:", "4"), ("5:", "5"), ("6:", "6"),
+                                        ("7:", "7"), ("8:", "8"), ("9:", "9"), ("10:", "10"), ("11:", "11"),
+                                        ("12:", "12")])
+    minute = SelectField("Minute", choices=[("00", ":00"), ("15", ":15"), ("30", ":30"), ("45", ":45")])
+    am_pm = SelectField("AM/PM", choices=[("AM", "AM"), ("PM", "PM")])
+
+
+class OrderForm(FlaskForm):
+    pizza = StringField("What type of pizza would you like?", validators=[DataRequired("Please enter a pizza.")])
+    time = FormField(TimeForm)
+    now_or_later = SelectField("Is your pizza for now or later?", choices=[("NOW", "Now"), ("LATER", "Later")])
+    delivery = SelectField("Would you like your pizza delivered or take out?",choices=[("DELIVERY", "Delivery"), ("TAKEOUT", "Take Out")])
+    submit = SubmitField("Place Order")
+
