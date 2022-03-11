@@ -13,6 +13,40 @@
                     {{ form.hidden_tag() }}
                  
                     <div class="form-group">
+                        {{ form.size.label }}
+
+                        {% if form.size.errors %}
+                            {% for error in form.size.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+
+                        {{ form.size }}
+                    </div>
+
+                    <div class="form-group">
+                        {{ form.toppings.label }}
+
+                        {% if form.toppings.errors %}
+                            {% for error in form.toppings.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+
+                        {{ form.toppings }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.crust.label }}
+
+                        {% if form.crust.errors %}
+                            {% for error in form.crust.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+
+                        {{ form.crust }}
+                    </div>
+                    <div class="form-group">
                         {{ form.time.label }}
 
                         {% if form.time.errors %}

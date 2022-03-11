@@ -1,7 +1,4 @@
-2022-03-11 16:48:49,360 - logger - INFO - Guest : Submitted a bad order form.
-2022-03-11 16:48:51,349 - logger - INFO - Guest : Submitted a bad order form.
-2022-03-11 16:48:53,544 - logger - INFO - Guest : Submitted a bad order form.
-2022-03-11 16:48:54,468 - logger - INFO - Guest : Submitted a bad order form.
-2022-03-11 16:48:55,124 - logger - INFO - Guest : Submitted a bad order form.
-2022-03-11 16:48:56,123 - logger - INFO - Guest : Submitted a bad order form.
-2022-03-11 16:48:56,782 - logger - INFO - Guest : Submitted a bad order form.
+2022-03-11 17:03:43,927 - logger - INFO - Guest : Accessed /index
+2022-03-11 17:03:47,703 - logger - INFO - Guest : Accessed /signup
+2022-03-11 17:03:53,858 - logger - INFO - Guest : Accessed /order
+2022-03-11 17:04:00,716 - logger - INFO - Guest : Placed an order. Details - {'time': {'hour': '1:', 'minute': '00', 'am_pm': 'AM', 'csrf_token': 'Ijk1ZTY4ZjJhMzI1MDNiZDJjYWYyMjA2YTExODY3YzQ0NjU0ZWJhZGQi.YitWyQ.xWW2Jx_79cwGAouKgk2vjxVZYwM'}, 'crust': 'crispy', 'size': 'medium', 'toppings': 'bacon', 'now_or_later': 'NOW', 'delivery': 'DELIVERY', 'submit': True, 'csrf_token': 'Ijk1ZTY4ZjJhMzI1MDNiZDJjYWYyMjA2YTExODY3YzQ0NjU0ZWJhZGQi.YitWyQ.xWW2Jx_79cwGAouKgk2vjxVZYwM'}
