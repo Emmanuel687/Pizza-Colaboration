@@ -1,2 +1,7 @@
-2022-03-11 15:29:37,708 - logger - INFO - James.kariuki@student.moringaschool.com : Accessed /index
-2022-03-11 15:29:39,797 - logger - INFO - James.kariuki@student.moringaschool.com : Accessed /order
+2022-03-11 16:48:49,360 - logger - INFO - Guest : Submitted a bad order form.
+2022-03-11 16:48:51,349 - logger - INFO - Guest : Submitted a bad order form.
+2022-03-11 16:48:53,544 - logger - INFO - Guest : Submitted a bad order form.
+2022-03-11 16:48:54,468 - logger - INFO - Guest : Submitted a bad order form.
+2022-03-11 16:48:55,124 - logger - INFO - Guest : Submitted a bad order form.
+2022-03-11 16:48:56,123 - logger - INFO - Guest : Submitted a bad order form.
+2022-03-11 16:48:56,782 - logger - INFO - Guest : Submitted a bad order form.

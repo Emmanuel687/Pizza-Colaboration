@@ -61,6 +61,7 @@ def login():
         return render_template("login.html", form=form)
 
 
+
 @app.route("/order", methods=["GET", "POST"])
 def order():
     form = OrderForm()
@@ -85,6 +86,7 @@ def order():
         else:
             logger.info("Guest : Accessed /order")
         return render_template("order.html", form=form)
+
 
 
 if __name__ == '__main__':

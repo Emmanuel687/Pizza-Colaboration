@@ -11,18 +11,7 @@
 
                 <form method="POST" action="/order">
                     {{ form.hidden_tag() }}
-                    <div class="form-group">
-                        {{ form.pizza.label }}
-
-                        {% if form.pizza.errors %}
-                            {% for error in form.pizza.errors %}
-                                <p>{{ error }}</p>
-                            {% endfor %}
-                        {% endif %}
-
-                        {{ form.pizza }}
-                    </div>
-
+                 
                     <div class="form-group">
                         {{ form.time.label }}
 

@@ -27,8 +27,10 @@ class TimeForm(FlaskForm):
 
 
 class OrderForm(FlaskForm):
-    pizza = StringField("What type of pizza would you like?", validators=[DataRequired("Please enter a pizza.")])
     time = FormField(TimeForm)
+    crust = SelectField("choose your type of crust",choices=["crispy","stuffed","glutten-free"])
+    size = SelectField("Decide pizza size",choices=["large","medium","small"])
+    toppings = SelectField("choose your toppings",choices=["bacon","bbq-chicken","brie","beef","ham"])
     now_or_later = SelectField("Is your pizza for now or later?", choices=[("NOW", "Now"), ("LATER", "Later")])
     delivery = SelectField("Would you like your pizza delivered or take out?",choices=[("DELIVERY", "Delivery"), ("TAKEOUT", "Take Out")])
     submit = SubmitField("Place Order")
