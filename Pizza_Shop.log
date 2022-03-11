@@ -1,0 +1,3 @@
+2022-03-11 15:11:28,197 - logger - INFO - Guest : Accessed /index
+2022-03-11 15:11:32,393 - logger - INFO - Guest : Accessed /signup
+2022-03-11 15:11:36,463 - logger - INFO - Guest : Accessed /login

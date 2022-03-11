@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main class="hero-section">
+        <div class="container">
+            <div class="section-content">
+                <h2>Welcome, {{ user }}!</h2>
+                <h2>Discover your next favorite pizza!</h2>
+                <a href="{{ url_for('signup') }}" class="btn-primary">Sign-Up</a>
+                <a href="{{ url_for('login') }}" class="btn-primary">Login</a>
+               
+            </div>
+        </div>
+
+        <div class="section-device">
+            <img src="static/img/pizza.png">
+        </div>
+
+        <div class="clearfix"></div>
+    </main>
+{% endblock %}
